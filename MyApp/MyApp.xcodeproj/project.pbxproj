@@ -13,6 +13,8 @@
 		222CB34520A598760003CEAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222CB34420A598760003CEAC /* Assets.xcassets */; };
 		222CB34820A598760003CEAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222CB34620A598760003CEAC /* LaunchScreen.storyboard */; };
 		222CB35320A598760003CEAC /* MyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222CB35220A598760003CEAC /* MyAppTests.swift */; };
+		2287E33020A9A9CB00CF98CD /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287E32F20A9A9CB00CF98CD /* ItemTableViewCell.swift */; };
+		2287E33220A9B77600CF98CD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287E33120A9B77600CF98CD /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		222CB34E20A598760003CEAC /* MyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		222CB35220A598760003CEAC /* MyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppTests.swift; sourceTree = "<group>"; };
 		222CB35420A598760003CEAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2287E32F20A9A9CB00CF98CD /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		2287E33120A9B77600CF98CD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,11 @@
 		222CB33C20A598740003CEAC /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				2287E33120A9B77600CF98CD /* Item.swift */,
 				222CB33D20A598740003CEAC /* AppDelegate.swift */,
 				222CB33F20A598740003CEAC /* ViewController.swift */,
 				222CB34120A598740003CEAC /* Main.storyboard */,
+				2287E32F20A9A9CB00CF98CD /* ItemTableViewCell.swift */,
 				222CB34420A598760003CEAC /* Assets.xcassets */,
 				222CB34620A598760003CEAC /* LaunchScreen.storyboard */,
 				222CB34920A598760003CEAC /* Info.plist */,
@@ -196,7 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2287E33220A9B77600CF98CD /* Item.swift in Sources */,
 				222CB34020A598740003CEAC /* ViewController.swift in Sources */,
+				2287E33020A9A9CB00CF98CD /* ItemTableViewCell.swift in Sources */,
 				222CB33E20A598740003CEAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
