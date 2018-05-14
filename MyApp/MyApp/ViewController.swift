@@ -11,9 +11,12 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var nameTextField: UITextField!
-    
+
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBAction func setLabelText(_ sender: UIButton) {
+        nameLabel.text = nameTextField.text
+    }
     
     
     
