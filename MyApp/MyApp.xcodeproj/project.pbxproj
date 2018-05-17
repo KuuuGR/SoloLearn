@@ -79,9 +79,9 @@
 		222CB33C20A598740003CEAC /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
-				228CB1AF20AD7A55003DB887 /* ItemTableViewCell.swift */,
 				222CB33D20A598740003CEAC /* AppDelegate.swift */,
 				222CB33F20A598740003CEAC /* ViewController.swift */,
+				228CB1AF20AD7A55003DB887 /* ItemTableViewCell.swift */,
 				222CB34120A598740003CEAC /* Main.storyboard */,
 				222CB34420A598760003CEAC /* Assets.xcassets */,
 				222CB34620A598760003CEAC /* LaunchScreen.storyboard */,
