@@ -15,6 +15,7 @@
 		222CB35320A598760003CEAC /* MyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222CB35220A598760003CEAC /* MyAppTests.swift */; };
 		228CB1B020AD7A55003DB887 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228CB1AF20AD7A55003DB887 /* ItemTableViewCell.swift */; };
 		228CB1B220AD7EBE003DB887 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228CB1B120AD7EBE003DB887 /* Item.swift */; };
+		228CB1B420AD82F1003DB887 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228CB1B320AD82F1003DB887 /* ItemTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		222CB35420A598760003CEAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		228CB1AF20AD7A55003DB887 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		228CB1B120AD7EBE003DB887 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		228CB1B320AD82F1003DB887 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +85,10 @@
 			children = (
 				222CB33D20A598740003CEAC /* AppDelegate.swift */,
 				222CB33F20A598740003CEAC /* ViewController.swift */,
-				228CB1AF20AD7A55003DB887 /* ItemTableViewCell.swift */,
 				222CB34120A598740003CEAC /* Main.storyboard */,
 				228CB1B120AD7EBE003DB887 /* Item.swift */,
+				228CB1B320AD82F1003DB887 /* ItemTableViewController.swift */,
+				228CB1AF20AD7A55003DB887 /* ItemTableViewCell.swift */,
 				222CB34420A598760003CEAC /* Assets.xcassets */,
 				222CB34620A598760003CEAC /* LaunchScreen.storyboard */,
 				222CB34920A598760003CEAC /* Info.plist */,
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228CB1B420AD82F1003DB887 /* ItemTableViewController.swift in Sources */,
 				228CB1B220AD7EBE003DB887 /* Item.swift in Sources */,
 				222CB34020A598740003CEAC /* ViewController.swift in Sources */,
 				228CB1B020AD7A55003DB887 /* ItemTableViewCell.swift in Sources */,
