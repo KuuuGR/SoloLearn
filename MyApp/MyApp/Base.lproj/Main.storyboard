@@ -49,8 +49,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Item" id="M8i-z5-b8w">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="yQA-AU-51h"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="MeF-7h-TiV"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="yQA-AU-51h">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="sWn-AR-sFe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="MeF-7h-TiV">
+                            <connections>
+                                <segue destination="OLh-p9-0YX" kind="unwind" unwindAction="unwindToListWithSender:" id="epD-jH-hAu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameLabel" destination="zdQ-oX-sIr" id="pjm-je-Ots"/>
@@ -59,6 +67,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="OLh-p9-0YX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1590" y="134"/>
         </scene>

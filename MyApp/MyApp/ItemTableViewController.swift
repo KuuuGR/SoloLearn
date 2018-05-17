@@ -11,6 +11,20 @@ class ItemTableViewController: UITableViewController {
 
     var items = [Item]()
     
+    @IBAction func unwindToList(sender: UIStoryboardSegue) {
+    
+        let srcViewCon = sender.source as? ViewController
+        let item = srcViewCon?.item
+        if (srcViewCon != nil && item?.name != ""){
+            // Add new item
+            let newIndexPath = NSIndexPath(row: items.count, section: 0)
+                items.append(item!)
+            tableView.insertRows(at: [newIndexPath as IndexPath], with: UITableViewRowAnimation.bottom)
+        }
+    }
+    
+    
+    
     //Declare a function to load the sample data into the array:
     func loadSampleItems() {
         items += [Item(name:"item1"), Item(name:"item2"), Item(name:"item3")]

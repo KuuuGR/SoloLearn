@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
+   
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+       dismiss(animated: true, completion: nil)
+    }
     
     
     
