@@ -65,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
-        <!--Item Table View Controller-->
+        <!--ToDo Items-->
         <scene sceneID="93s-xT-5bV">
             <objects>
                 <tableViewController id="5N1-FF-How" customClass="ItemTableViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -100,7 +100,9 @@
                             <outlet property="delegate" destination="5N1-FF-How" id="sve-rn-51y"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="vd3-sk-bDc"/>
+                    <navigationItem key="navigationItem" title="ToDo Items" id="vd3-sk-bDc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="D1z-gy-sHh"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8I-g7-0gE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
