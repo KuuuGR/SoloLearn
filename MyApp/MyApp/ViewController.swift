@@ -9,16 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var item: Item?
     
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var nameTextField: UITextField!
-
     @IBOutlet weak var nameLabel: UILabel!
     
-    @IBAction func setLabelText(_ sender: UIButton) {
-        nameLabel.text = nameTextField.text
+    
+    
+    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        if saveButton === sender {
+            let name = nameTextField.text ?? ""
+            item = Item(name: name)
+        }
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

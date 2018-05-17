@@ -55,6 +55,7 @@
                     <connections>
                         <outlet property="nameLabel" destination="zdQ-oX-sIr" id="pjm-je-Ots"/>
                         <outlet property="nameTextField" destination="7VG-tS-lcW" id="ebm-BU-FH8"/>
+                        <outlet property="saveButton" destination="MeF-7h-TiV" id="eIU-EH-QdY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
