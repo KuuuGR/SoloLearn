@@ -109,7 +109,7 @@
                     <navigationItem key="navigationItem" title="ToDo Items" id="vd3-sk-bDc">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="D1z-gy-sHh">
                             <connections>
-                                <segue destination="ShN-Pj-i3v" kind="show" id="1uz-kf-tfw"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="obd-iq-ilG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -135,24 +135,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d47-TR-QM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-634.39999999999998" y="133.5832083958021"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="beb-Ys-2IN">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UF6-ES-Tq3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ShN-Pj-i3v" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MN3-OO-t2S">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Iz7-9g-YJH"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="825" y="134"/>
         </scene>
     </scenes>
 </document>

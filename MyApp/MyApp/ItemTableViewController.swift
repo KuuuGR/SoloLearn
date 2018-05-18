@@ -15,12 +15,14 @@ class ItemTableViewController: UITableViewController {
     
         let srcViewCon = sender.source as? ViewController
         let item = srcViewCon?.item
+        
         if (srcViewCon != nil && item?.name != ""){
             // Add new item
             let newIndexPath = NSIndexPath(row: items.count, section: 0)
                 items.append(item!)
             tableView.insertRows(at: [newIndexPath as IndexPath], with: UITableViewRowAnimation.bottom)
         }
+        
     }
     
     
