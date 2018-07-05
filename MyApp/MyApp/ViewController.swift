@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
    
     @IBAction func cancel(_ sender: UIBarButtonItem) {
-       dismiss(animated: true, completion: nil)
+      // dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if sender as AnyObject? === saveButton
         {
-            let name = nameTextField.text ?? ""
+            let name = nameTextField.text ?? "";
             item = Item(name: name)
             
         }
