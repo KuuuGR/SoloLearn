@@ -98,6 +98,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="Y2b-hm-bR9" id="aNf-qK-1Nt"/>
+                                    <segue destination="5N1-FF-How" kind="show" identifier="ShowDetial" id="uaw-2z-29n"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -116,7 +117,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8I-g7-0gE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92" y="134"/>
+            <point key="canvasLocation" x="103" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QsE-2F-puX">

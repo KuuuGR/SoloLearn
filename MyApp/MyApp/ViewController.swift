@@ -16,8 +16,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
    
     @IBAction func cancel(_ sender: UIBarButtonItem) {
-      // dismiss(animated: true, completion: nil)
-        self.navigationController?.popViewController(animated: true)
+       // self.navigationController?.popViewController(animated: true)
+        
+        let isInAddMode = presentingViewController is UINavigationController
+        
+        if isInAddMode {
+            dismiss(animated: true, completion: nil)
+        }
+        else {
+            navigationController!.popViewController(animated: true)
+        }
+        
+        
     }
     
     
@@ -41,6 +51,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let item = item {
+            nameTextField.text   = item.name
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
