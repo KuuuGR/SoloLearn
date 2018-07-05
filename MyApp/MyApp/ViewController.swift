@@ -21,11 +21,19 @@ class ViewController: UIViewController {
     
     
     
-    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        if saveButton === sender {
-            let name = nameTextField.text ?? ""
-            item = Item(name: name)
+//    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if saveButton === sender {
+//            let name = nameTextField.text ?? ""
+//            item = Item(name: name)
+//        }
+//    }
+    
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if sender as AnyObject? === saveButton
+        { let name = nameTextField.text ?? ""; item = Item(name: name)
+            
         }
+        
     }
     
     override func viewDidLoad() {
