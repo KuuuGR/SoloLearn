@@ -30,7 +30,9 @@ class ViewController: UIViewController {
     
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if sender as AnyObject? === saveButton
-        { let name = nameTextField.text ?? ""; item = Item(name: name)
+        {
+            let name = nameTextField.text ?? ""
+            item = Item(name: name)
             
         }
         
