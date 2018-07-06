@@ -29,6 +29,7 @@ class ItemTableViewController: UITableViewController {
                 items.append(item!)
             tableView.insertRows(at: [newIndexPath as IndexPath], with: UITableViewRowAnimation.bottom)
             }
+            saveItems()
         }
         
     }
@@ -40,12 +41,29 @@ class ItemTableViewController: UITableViewController {
         items += [Item(name:"item1"), Item(name:"item2"), Item(name:"item3")]
     }
     
+    func saveItems() {
+        let isSaved = NSKeyedArchiver.archiveRootObject(items, toFile: Item.ArchiveURL.path)
+        if !isSaved {
+            print("Failed to save items...")
+        }
+    }
+    
+    func loadItems() -> [Item]? {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Item.ArchiveURL.path) as? [Item]
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadSampleItems()
         navigationItem.leftBarButtonItem = editButtonItem
+        
+        // Load saved items
+        if let savedItems = loadItems() {
+            items += savedItems
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -97,6 +115,7 @@ class ItemTableViewController: UITableViewController {
         if editingStyle == .delete {
             // Delete the row from the data source
             self.items.remove(at: indexPath.row)
+            saveItems()
             self.tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
